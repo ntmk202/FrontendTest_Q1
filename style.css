@@ -5,23 +5,47 @@
 }
 body {
   display: flex;
+  position: relative;
+  margin: auto;
   font-family: "Poppins", sans-serif;
 }
 
-.left-tab {
-  position: absolute;
-  width: 25%;
+.sliderBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
   height: 100%;
-  background-color: darkslategray;
-  font-weight: 600;
+  background-color: #191718;
 }
 
-.left-tab .tab-item{
-  color: white;
+.left-nav {
+  /* position: fixed; */
+  height: 100%;
+}
+
+.tab-item{
+  min-width: 80px;
   padding: 10%;
   border-bottom: 1px solid gray;
   opacity: 0.6;
   cursor: pointer;
+}
+
+ul { 
+  margin: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
 .tab-item:hover {
@@ -31,4 +55,83 @@ body {
 
 .tab-item.active {
   opacity: 1;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-left: 25%;
+}
+
+.logo{
+  width: 310px;
+  height: 122px;
+}
+
+.page-content {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 269px;
+  background-color: #EFEFEF;
+}
+
+.page-content p{
+  text-align: center;
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.page-content h4{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.page-card{
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-grow: 3;
+  margin-top: 40px;
+}
+
+.page-card .card {
+  padding: 1rem;
+  width: 30%;
+}
+
+.card-content {
+  display: flex;
+  margin-top: 18px;
+}
+
+.card-content img{
+  width: 128px;
+  height: 128px;
+  margin-right: 16px;
+}
+
+.card-content h4{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.card-content p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  flex-wrap: wrap;
 }
