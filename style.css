@@ -5,26 +5,31 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
-  display: flex;
-  flex: 1;
-  position: relative;
   margin: auto;
   font-family: "Poppins", sans-serif;
 }
 
+.main{
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
 .sliderBar {
-  position: fixed;
+  /* position: fixed; */
+  display: flex;
   flex: .3;
   top: 0;
   left: 0;
-  width: 15%;
-  height: 100%;
-  background-color: #191718;
+  width: 200px;
+  background-color: antiquewhite;
 }
 
 .left-nav {
-  /* position: fixed; */
+  position: fixed;
+  width: 15%;
   height: 100%;
+  background-color: #191718;
 }
 
 .tab-item{
@@ -61,12 +66,13 @@ a{
 }
 
 .page {
-  flex: .6;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 1rem;
-  margin-left: 20%;
+  /* padding-left: 20%; */
 }
 
 .logo{
